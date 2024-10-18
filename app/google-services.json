@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614979168931",
+    "project_id": "empowering-the-nation-e695b",
+    "storage_bucket": "empowering-the-nation-e695b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614979168931:android:eb66aeea82d678bee1ed16",
+        "android_client_info": {
+          "package_name": "com.varsitycollege.upskill2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCKp75lD7Hfdd1uACtVOzQu5QZFZ1K7a8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

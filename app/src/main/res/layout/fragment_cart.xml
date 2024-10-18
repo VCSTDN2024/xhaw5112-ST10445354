@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:overScrollMode="never"
+      android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <!-- Total Price TextView (Excluding VAT) -->
+      <TextView
+          android:id="@+id/totalPriceTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Total (Excl. VAT): R 0.00"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_marginBottom="8dp" />
+
+      <!-- VAT Amount TextView -->
+      <TextView
+          android:id="@+id/vatTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="VAT (15%): R 0.00"
+          android:textSize="16sp"
+          android:layout_marginBottom="8dp"
+          android:visibility="gone" />
+
+      <!-- Total Price Including VAT TextView -->
+      <TextView
+          android:id="@+id/totalPriceWithVatTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Total (Incl. VAT): R 0.00"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_marginBottom="8dp"
+          android:visibility="gone" />
+
+      <!-- Amount Saved TextView -->
+      <TextView
+          android:id="@+id/savingsTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="You save: R 0.00"
+          android:textSize="16sp"
+          android:textColor="@color/red"
+          android:visibility="gone"
+          android:layout_marginBottom="16dp" />
+
+      <!-- RecyclerView for Cart Items -->
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <!-- Payment Method Selection -->
+      <RadioGroup
+          android:id="@+id/paymentMethodRadioGroup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDebitCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPayPal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayPal" />
+
+        <!-- Add other payment methods as needed -->
+
+      </RadioGroup>
+
+      <!-- Button Container LinearLayout -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="16dp"
+          android:gravity="center">
+
+        <!-- Clear Cart Button -->
+        <Button
+            android:id="@+id/clearCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Clear Cart"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Floating Action Button for Complete Purchase -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/completePurchaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Complete Purchase"
+            android:src="@drawable/ic_check"
+            android:backgroundTint="#225560"
+            app:fabSize="normal" />
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Upskill2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="testimonial1_heading">
+        Mashego D.:
+    </string>
+    <string name="testimonial1_statement">
+      &quot; I was skeptical about taking the courses initially, but after completing the landscapping course, I couldn\'t be more satisfied. The flexibility to learn at my own pace and the interactive content kept me engaged throughout. I highly recommend these courses to anyone looking to enhance their skills.&quot;
+    </string>
+    <string name="testimonials">Testimonials</string>
+
+
+    <string name="testimonial2_heading">
+        Leano M.:
+    </string>
+    <string name="testimonial2_statement">
+        &quot;The life skill course I took was not only affordable but also extremely detailed. The interactive quizzes and real-life examples made complex concepts easier to understand. I feel much more prepared to start my own business.&quot;
+    </string>
+
+
+    <string name="testimonial3_heading">
+        Smith B.:
+    </string>
+    <string name="testimonial3_statement">
+        &quot;The child minding course provided me with the tools and knowledge to start my own business. The course content was comprehensive, covering everything from business planning to marketing strategies. The instructors were always available for questions, and their insights were incredibly helpful.&quot;
+    </string>
+
+
+    <string name="testimonial4_heading">
+        Ngwenya R.:
+    </string>
+    <string name="testimonial4_statement">
+        &quot;I have taken multiple courses, but this gardening course stood out due to its in-depth content and hands-on projects. The feedback from instructors was invaluable, and the course structure was well-organized. I feel much more confident in my skills now and have already started applying what I learned in my job.&quot;
+    </string>
+
+
+    <string name="testimonial5_heading">
+        Michel S.:
+    </string>
+    <string name="testimonial5_statement">
+        &quot;Taking the cooking course was a game-changer for me. The instructors were industry experts, and the real-world case studies provided practical knowledge that I could immediately apply at work. The community forums were also a great way to connect with fellow learners and share insights.&quot;
+    </string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="courses">Courses</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="address">Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="logout">Logout</string>
+    <string name="share">Share</string>
+    <string name="about_us">About us</string>
+    <string name="tshepo_sadiki">Tshepo Sadiki</string>
+    <string name="tsheposadiki92_gmail_com">tsheposadiki92@gmail.com</string>
+    <string name="search">Search</string>
+    <string name="looking_for">Looking For</string>
+
+    <string name="gardening">Gardening</string>
+    <string name="gardening1"> Duration: 6 weeks </string>
+    <string name="gardening2"> Purpose: To provide basic knowledge of watering, pruning and planting in a domestic garden.</string>
+    <string name="gardening3"> Fees: R750 </string>
+
+    <string name="cooking">Cooking</string>
+    <string name="cooking1">Duration: 6 weeks</string>
+    <string name="cooking2">Purpose: To prepare and cook nutritious family meals.</string>
+    <string name="cooking3">Fees: R750</string>
+
+    <string name="child_minding">Child Minding</string>
+    <string name="childminding1">Duration: 6 weeks</string>
+    <string name="childminding2">Purpose: To provide basic child and baby.</string>
+    <string name="childminding3">Fees: R750</string>
+
+    <string name="learn_more">Learn more</string>
+
+    <string name="landscapping">Landscapping</string>
+    <string name="landscapping1">Duration: 6 months</string>
+    <string name="landscapping2">Purpose: To provide landscapping services for new and established gardens.</string>
+    <string name="landscapping3">Fees: R1 500</string>
+
+    <string name="life_skills">Life Skills</string>
+    <string name="lifeskills1">Duration: 6 months</string>
+    <string name="lifeskills2">Purpose: To provide basic skills to navigate basic life necessities. </string>
+    <string name="lifeskills3">Fees: R1 500</string>
+
+    <string name="sewing">Sewing</string>
+    <string name="sewing1">Duration: 6 months</string>
+    <string name="sewing2">Purpose: To provide alterations and new garment tailoring services. </string>
+    <string name="sewing3">Fees: R1 500</string>
+
+    <string name="first_aid">First Aid</string>
+    <string name="firstaid1">Duration: 6 months</string>
+    <string name="firstaid2">Purpose: To provide first aid awareness and basic life support. </string>
+    <string name="firstaid3">Fees: R1 500</string>
+    <string name="add_to_cart">Add to Cart</string>
+
+
+</resources>
