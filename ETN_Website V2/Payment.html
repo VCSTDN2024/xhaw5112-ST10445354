@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" type="image/x-icon" href="ETN_Website/Images/Preview (1).png">
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <nav>
+        <img src="ETN_Website/Images/Preview (1).png" alt="Empowering the Nation Logo" class="logo" >
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Payment.html">Payment</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="About  Us.html">About Us</a></li>
+            <li><a href="SixMonth.html">Six-Month Courses</a></li>
+            <li><a href="SixWeek.html">Six-Week Courses</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    
+    <main>
+        <section class="price-section">
+            <h1>Our Price Calculator</h1>
+            <p>Select the courses you'd like and see your total price with discounts applied.</p>
+            <ul class="discount-info">
+                <li>1 item selected: 5% discount applied</li>
+                <li>2 items selected: 10% discount applied</li>
+                <li>3 or more items selected: 15% discount applied</li>
+            </ul>
+            
+            <div class="calculator-container">
+                <h2>Price Calculator</h2>
+                <form id="priceForm">
+                    <label>
+                        <input type="checkbox" id="item1" value="1500"> First Aid (R 1500)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item2" value="1500"> Life Skills (R 1500)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item3" value="1500"> Landscaping (R 1500)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item4" value="1500"> Sewing (R 1500)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item5" value="750"> Cooking (R 750)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item6" value="750"> Child Minding (R 750)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="item7" value="750"> Garden Maintenance (R 750)
+                    </label>
+
+                    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+                    <div class="total-display" id="totalDisplay">Total: R 0</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function calculateTotal() {
+            const items = document.querySelectorAll('input[type="checkbox"]');
+            let total = 0;
+            let selectedItemsCount = 0;
+
+            items.forEach(item => {
+                if (item.checked) {
+                    total += parseFloat(item.value);
+                    selectedItemsCount++;
+                }
+            });
+
+            let discount = 0;
+            if (selectedItemsCount === 1) {
+                discount = 0.05;
+            } else if (selectedItemsCount === 2) {
+                discount = 0.10;
+            } else if (selectedItemsCount >= 3) {
+                discount = 0.15;
+            }
+
+            total = total - (total * discount);
+            document.getElementById('totalDisplay').innerText = 'Total: R ' + total.toFixed(2);
+        }
+    </script>
+
+<footer>
+    <hr>
+   <center> <p>Follow Us</p> </center>
+    <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank"><img src="ETN_Website/Images/facebookIcon.webp" alt="Facebook" class="social-icon" width="30" height="30"></a>
+        <a href="https://twitter.com" target="_blank"><img src="ETN_Website/Images/twitterlogo.png" alt="Twitter" class="social-icon" width="30" height="30"></a>
+        <a href="https://instagram.com" target="_blank"><img src="ETN_Website/Images/instagramlogo.jpeg" alt="Instagram" class="social-icon" width="30" height="30"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="ETN_Website/Images/linkedinlogo.png" alt="LinkedIn" class="social-icon" width="30" height="30"></a>
+    </div>
+  <cneter> <p>&copy; 2024 Empowering the Nation. All rights reserved.</p> </cneter>  
+</footer>
+</body>
+
+
+</html>

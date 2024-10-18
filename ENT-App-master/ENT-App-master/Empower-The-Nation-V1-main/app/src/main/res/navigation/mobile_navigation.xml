@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.varsitycollege.upskill2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_courses"
+        android:name="com.varsitycollege.upskill2.ui.courses.CoursesFragment"
+        android:label="Courses"
+        tools:layout="@layout/fragment_courses" />
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.varsitycollege.upskill2.ui.signup.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup" />
+
+
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.varsitycollege.upskill2.ui.contactus.ContactUsFragment"
+        android:label="Contact us"
+        tools:layout="@layout/fragment_contactus" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.varsitycollege.upskill2.ui.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+
+    <fragment
+        android:id="@+id/nav_paymentmethod"
+        android:name="com.varsitycollege.upskill2.ui.paymentmethod.PaymentmethodFragment"
+        android:label="Payment Method"
+        tools:layout="@layout/fragment_paymentmethod" />
+
+
+
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.varsitycollege.upskill2.ui.courses.CoursesFragment"
+        tools:layout="@layout/fragment_courses" >
+        <action
+            android:id="@+id/action_coursesFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.varsitycollege.upskill2.ui.CartFragment"
+        tools:layout="@layout/fragment_cart" />
+
+</navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_container_view_tag" type="id"/>
+    <item name="special_effects_controller_view_tag" type="id"/>
+    <item name="visible_removing_fragment_view_tag" type="id"/>
+    <item name="nav_host_fragment" type="id" />
+    <item name="action_to_signUpFragment" type="id" />
+</resources>
